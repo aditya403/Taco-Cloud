@@ -1,0 +1,59 @@
+DevTools:
+---------
+As its name suggests, DevTools provides Spring developers with some handy development-
+time tools. Among those are
+	Automatic application restart when code changes
+	Automatic browser refresh when browser-destined resources (such as templates,
+		JavaScript, stylesheets, and so on) change
+	Automatic disable of template caches
+	Built in H2 Console if the H2 database is in use
+It’s important to understand that DevTools isn’t an IDE plugin, nor does it require
+that you use a specific IDE.
+
+AUTOMATIC APPLICATION RESTART:
+----------------------------
+With DevTools as part of your project, you’ll be able to make changes to Java code and
+properties files in the project and see those changes applied after a brief moment.
+DevTools monitors for changes, and when it sees something has changed, it automatically
+restarts the application.
+More precisely, when DevTools is in play, the application is loaded into two separate
+class loaders in the Java virtual machine (JVM). One class loader is loaded with
+your Java code, property files, and pretty much anything that’s in the src/main/ path
+of the project. These are items that are likely to change frequently. The other class
+loader is loaded with dependency libraries, which aren’t likely to change as often.
+When a change is detected, DevTools reloads only the class loader containing your
+project code and restarts the Spring application context, but leaves the other class
+loader and the JVM intact. Although subtle, this strategy affords a small reduction in
+the time it takes to start the application.
+The downside of this strategy is that changes to dependencies won’t be available in
+automatic restarts. That’s because the class loader containing dependency libraries
+isn’t automatically reloaded. This means that any time you add, change, or remove a
+dependency in your build specification, you’ll need to do a hard restart of the application
+for those changes to take effect.
+
+AUTOMATIC BROWSER REFRESH AND TEMPLATE CACHE DISABLE:
+-----------------------------------------------------
+By default, template options such as Thymeleaf and FreeMarker are configured to
+cache the results of template parsing so that templates don’t need to be reparsed
+with every request they serve. This is great in production, as it buys a bit of performance
+benefit.
+Cached templates, however, are not so great at development time. Cached templates
+make it impossible to make changes to the templates while the application is
+running and see the results after refreshing the browser. Even if you’ve made changes,
+the cached template will still be in use until you restart the application.
+DevTools addresses this issue by automatically disabling all template caching. Make
+as many changes as you want to your templates and know that you’re only a browser
+refresh away from seeing the results.
+
+Note:	If you don't want to click on the refresh button again and again after every update
+	then you can install an LiveReload extension. When DevTools is in play, it automatically enables a LiveReload 		(http://livereload.com/) server along with your application.By itself, the LiveReload server isn’t
+	very useful. But when coupled with a corresponding LiveReload browser plugin, it
+	causes your browser to automatically refresh when changes are made to templates,
+	images, stylesheets, JavaScript, and so on—in fact, almost anything that ends up being
+	served to your browser.
+
+
+
+
+
+
