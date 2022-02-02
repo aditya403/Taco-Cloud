@@ -1,0 +1,23 @@
+//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
+//org.eclipse.ui.commands/state/org.eclipse.wst.xml.views.XPathView.processor.xpathprocessor/org.eclipse.ui.commands.radioState=xpath10
+PLUGINS_NOT_ACTIVATED_ON_STARTUP=;org.eclipse.m2e.discovery;
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.ColoredLabels.match_highlight=65,68,88
+org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<org.eclipse.ui.commands/>
+org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_START=33,34,44
+org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_SELECTED_TEXT_COLOR=196,199,212
+org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_TEXT_COLOR=16,16,16
+org.eclipse.ui.workbench.ACTIVE_TAB_BG_START=33,34,44
+org.eclipse.ui.workbench.ACTIVE_TAB_INNER_KEYLINE_COLOR=59,62,79
+org.eclipse.ui.workbench.ACTIVE_TAB_OUTER_KEYLINE_COLOR=59,62,79
+org.eclipse.ui.workbench.ACTIVE_TAB_OUTLINE_COLOR=54,57,73
+org.eclipse.ui.workbench.ACTIVE_TAB_SELECTED_TEXT_COLOR=243,244,246
+org.eclipse.ui.workbench.ACTIVE_UNSELECTED_TABS_COLOR_END=50,52,67
+org.eclipse.ui.workbench.ACTIVE_UNSELECTED_TABS_COLOR_START=56,59,76
+org.eclipse.ui.workbench.INACTIVE_TAB_BG_START=48,50,65
+org.eclipse.ui.workbench.INACTIVE_TAB_INNER_KEYLINE_COLOR=39,41,53
+org.eclipse.ui.workbench.INACTIVE_TAB_OUTER_KEYLINE_COLOR=39,41,53
+org.eclipse.ui.workbench.INACTIVE_TAB_OUTLINE_COLOR=48,50,65
+org.eclipse.ui.workbench.INACTIVE_TAB_UNSELECTED_TEXT_COLOR=176,179,196
+org.eclipse.ui.workbench.INACTIVE_UNSELECTED_TABS_COLOR_END=54,57,73
+org.eclipse.ui.workbench.INACTIVE_UNSELECTED_TABS_COLOR_START=39,41,53
